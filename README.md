@@ -1,5 +1,5 @@
 ### Salut 👋
 
 
-- 🌱 I’m currently learning HTML, CSS and JavaScript
+- 🌱 J'apprends actuellement HTML, CSS and JavaScript
 
