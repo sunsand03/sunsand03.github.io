@@ -49,6 +49,12 @@
  *
  * =================================================================== */
 
+#logo{
+  width: 100px;
+  height: 80px;
+
+}
+
 
 
 
@@ -1710,6 +1716,7 @@ input::-moz-focus-inner {
 .header-nav-wrap {
   max-width: 1400px;
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .header-nav {
