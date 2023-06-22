@@ -1,63 +1,3 @@
-/* =================================================================== 
- *  Ethos Main Stylesheet
- *  Template Ver. 1.0.0
- *  11-05-2019
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # custom block grid STACK breakpoints
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image 
- *    ## tables
- *    ## Spacing
- *  # preloader
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles in Chrome
- *  # buttons
- *  # additional components
- *    ## additional typo styles 
- *    ## skillbars
- *    ## alert box 
- *  # Common and Reusable Styles
- *  # site header
- *    ## header logo
- *    ## main navigation
- *    ## mobile menu toggle
- *    ## download resume button
- *  # hero
- *    ## hero social
- *    ## hero scroll
- *    ## animate intro content
- *    ## animations
- *  # about section
- *    ## career position
- *  # services section
- *    ## services list
- *  # portfolio
- *    ## portfolio list
- *  # testimonials
- *  # CTA
- *  # footer
- *    ## contact block
- *    ## copyright
- *    ## go top
- *
- * =================================================================== */
-
-#logo{
-  width: 100px;
-  height: 80px;
-
-}
-
-
-
-
 /* ===================================================================
  * # custom block grid STACK breakpoints
  *
@@ -1891,8 +1831,8 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 37px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   .header-content {
@@ -2051,7 +1991,7 @@ input::-moz-focus-inner {
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 7rem;
   font-weight: 400;
   line-height: 1.257;
   padding-right: 3.2rem;
@@ -2069,6 +2009,10 @@ input::-moz-focus-inner {
   position: absolute;
   left: -10.8rem;
   top: .55em;
+}
+
+.hero-title{
+  width: 70%;
 }
 
 /* -------------------------------------------------------------------
@@ -2105,10 +2049,7 @@ input::-moz-focus-inner {
   color: #f9861a;
 }
 
-.fa-brands{
-  height: 250rem;
-  width:50px;
-}
+
 
 .hero-social li {
   padding-left: 0;
@@ -2457,11 +2398,12 @@ html.no-csstransitions .hero-content {
   padding-bottom: 16rem;
   background-color: #ffffff;
   position: relative;
+  color: #000000;
 }
 
-.s-about .right-vert-line {
-  background-color: #302c59;
-}
+/* .s-about .right-vert-line {
+  background-color: #efeef5;
+} */
 
 .s-about__section--profile {
   padding-top: 28rem;
@@ -2902,6 +2844,7 @@ html.no-csstransitions .hero-content {
   overflow: hidden;
   display: flex;
   margin-bottom: 20px;
+  
 }
 
 .folio-item img{
@@ -3123,120 +3066,6 @@ html.no-csstransitions .hero-content {
 }
 
 
-
-/* ===================================================================
- * # testimonials
- *
- * ------------------------------------------------------------------- */
-.s-testimonials {
-  padding-top: 14.4rem;
-  padding-bottom: 16rem;
-  background-color: #ffffff;
-}
-
-.testimonial-slider {
-  position: relative;
-}
-
-.testimonial-slider p {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 1.882;
-  color: #000000;
-}
-
-.testimonial-slider .slick-slide {
-  outline: none;
-}
-
-.testimonial-slider .slick-dots {
-  display: block;
-  list-style: none;
-  padding: 0;
-  margin: 5.6rem 0 0 0;
-  text-align: center;
-}
-
-.testimonial-slider .slick-dots li {
-  display: inline-block;
-  width: 27px;
-  height: 27px;
-  margin: 0;
-  padding: 9px;
-  cursor: pointer;
-}
-
-.testimonial-slider .slick-dots li button {
-  display: block;
-  width: 10px;
-  height: 10px;
-  line-height: 10px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
-}
-
-.testimonial-slider .slick-dots li button:hover,
-.testimonial-slider .slick-dots li button:focus {
-  outline: none;
-}
-
-.testimonial-slider .slick-dots li.slick-active button,
-.testimonial-slider .slick-dots li:hover button {
-  background: #000000;
-}
-
-.testimonial-slider__slide {
-  position: relative;
-  padding: 0 20px;
-}
-
-.testimonial-slider__author {
-  min-height: 7.2rem;
-  margin-top: 4rem;
-  padding-left: 8.8rem;
-  position: relative;
-}
-
-.testimonial-slider__avatar {
-  width: 6.8rem;
-  height: 6.8rem;
-  border-radius: 100%;
-  outline: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.testimonial-slider__cite {
-  display: block;
-}
-
-.testimonial-slider__cite strong,
-.testimonial-slider__cite span {
-  font-family: "Gothic A1", sans-serif;
-  font-style: normal;
-}
-
-.testimonial-slider__cite strong {
-  font-size: 1.6rem;
-  line-height: 1.75;
-}
-
-.testimonial-slider__cite span {
-  display: block;
-  font-size: 1.5rem;
-  line-height: 1.333;
-  color: rgba(0, 0, 0, 0.7);
-}
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
@@ -3265,53 +3094,6 @@ html.no-csstransitions .hero-content {
 
 }
 
-
-
-/* ===================================================================
- * # CTA
- *
- * ------------------------------------------------------------------- */
-.s-cta {
-  padding-top: 12rem;
-  background-color: #ffffff;
-  font-size: 2.2rem;
-  line-height: 1.818;
-  text-align: center;
-}
-
-.s-cta h2 {
-  margin-top: 0;
-}
-
-.cta-content {
-  max-width: 800px;
-}
-
-.cta-content .btn {
-  max-width: 600px;
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * cta
- * ------------------------------------------------------------------- */
-@media screen and (max-width:800px) {
-  .s-cta {
-    font-size: 2rem;
-  }
-
-  .cta-content {
-    max-width: 600px;
-  }
-
-}
-
-@media screen and (max-width:600px) {
-  .s-cta {
-    font-size: 1.8rem;
-  }
-
-}
 
 
 
