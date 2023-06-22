@@ -2401,6 +2401,10 @@ html.no-csstransitions .hero-content {
   color: #000000;
 }
 
+.s-about p{
+  margin-bottom: 10px;
+}
+
 /* .s-about .right-vert-line {
   background-color: #efeef5;
 } */
@@ -3100,6 +3104,11 @@ html.no-csstransitions .hero-content {
   padding-bottom: 8rem;
   background-color: #0b0a15;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .s-footer .right-vert-line {
@@ -3108,11 +3117,13 @@ html.no-csstransitions .hero-content {
 
 .s-footer ul{
   display: flex;
-  justify-content: space-between;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 .s-footer ul li{
-  list-style: none;
+  margin: 0 10px;
 }
 
 .s-footer__bottom {
