@@ -2873,6 +2873,22 @@ html.no-csstransitions .hero-content {
   bottom: 0;
   left: 50%;
 }
+/* porfolio test*/
+
+
+
+.techno ul{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.techno ul li {
+  margin-right: 10px;
+  list-style: none;
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * ## portfolio list
@@ -2884,6 +2900,16 @@ html.no-csstransitions .hero-content {
 .folio-item {
   position: relative;
   overflow: hidden;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.folio-item img{
+  width:50%;
+}
+
+.folio-item-contenu{
+  margin-left: 20px;
 }
 
 .folio-item__caption {
