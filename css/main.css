@@ -2847,13 +2847,7 @@ html.no-csstransitions .hero-content {
   
 }
 
-.folio-item img{
-  width:50%;
-}
 
-.folio-item-contenu{
-  margin-left: 20px;
-}
 
 .folio-item__caption {
   display: none;
@@ -3110,6 +3104,15 @@ html.no-csstransitions .hero-content {
 
 .s-footer .right-vert-line {
   background-color: #f9861a;
+}
+
+.s-footer ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.s-footer ul li{
+  list-style: none;
 }
 
 .s-footer__bottom {
