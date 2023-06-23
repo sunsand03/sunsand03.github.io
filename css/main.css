@@ -1998,6 +1998,7 @@ input::-moz-focus-inner {
   margin-top: 300;
   color: #ffffff;
   position: relative;
+  width:70%;
 }
 
 .hero-content h1::before {
@@ -2841,12 +2842,15 @@ html.no-csstransitions .hero-content {
  * ------------------------------------------------------------------- */
 .s-portfolio__list {
   max-width: 1240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .folio-item {
   position: relative;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
   
 }
@@ -3110,6 +3114,27 @@ html.no-csstransitions .hero-content {
   flex-direction: column;
   text-align: center;
 }
+
+.s-footer__main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-footer__main ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.s-footer__main ul li{
+  margin: 0 10px;
+}
+
+
 
 .s-footer .right-vert-line {
   background-color: #f9861a;
