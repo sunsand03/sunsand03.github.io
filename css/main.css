@@ -2523,23 +2523,24 @@ html.no-csstransitions .hero-content {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  width: 80%;
+  width: 100%;
   margin:auto;
 }
 
 .row-skills {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row; /* Change from column to row */
+  flex-wrap: wrap; /* Allow the items to wrap to the next line */
+  justify-content: space-between;
   align-content: space-between;
-  max-height: 800px; /* Vous pouvez ajuster cette valeur en fonction de la hauteur de votre contenu */
+  max-height: 800px; 
 }
 
 .skills-item {
-  flex: 1 0 48%; /* Ajuster le pourcentage pour contrôler la largeur de chaque élément */
+  flex: 1 0 calc(50% - 20px); /* Adjust for 2 items per row. 20px for margin */
   margin-bottom: 20px;
 }
+
 
 .skills-item img{
   width: 100px;
@@ -2549,13 +2550,6 @@ html.no-csstransitions .hero-content {
 .skills-item h3{
   margin-top: 0;
 }
-
-.right{
-  margin-left: 90px;
-}
-
-
-
 
 
 /* ------------------------------------------------------------------- 
@@ -2977,38 +2971,6 @@ html.no-csstransitions .hero-content {
   }
 
 }
-
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * testimonials
- * ------------------------------------------------------------------- */
-@media screen and (max-width:800px) {
-  .testimonial-slider__slide {
-    text-align: center;
-  }
-
-  .testimonial-slider__author {
-    display: inline-block;
-  }
-
-}
-
-@media screen and (max-width:400px) {
-  .testimonial-slider__author {
-    margin: 0;
-    padding: 0;
-  }
-
-  .testimonial-slider__avatar {
-    position: static;
-    margin-bottom: 2.4rem;
-  }
-
-}
-
-
-
 
 /* ===================================================================
  * # footer
