@@ -2525,28 +2525,25 @@ html.no-csstransitions .hero-content {
   height: 90vh;
   width: 80%;
   margin:auto;
-
 }
 
 .row-skills {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  
+  align-content: space-between;
+  max-height: 800px; /* Vous pouvez ajuster cette valeur en fonction de la hauteur de votre contenu */
 }
 
-
 .skills-item {
-  flex: 1 0 40%; /* Cela signifie que chaque élément prendra environ 48% de la largeur du conteneur. */
-  margin-bottom: 20px; /* Pour ajouter de l'espace entre les lignes */
-  
-  
+  flex: 1 0 48%; /* Ajuster le pourcentage pour contrôler la largeur de chaque élément */
+  margin-bottom: 20px;
 }
 
 .skills-item img{
   width: 100px;
   height: 100px;
-  
 }
 
 .skills-item h3{
