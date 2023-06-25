@@ -1436,7 +1436,9 @@ input::-moz-focus-inner {
 
 .section-intro {
   position: relative;
-  margin-bottom: 12rem;
+  margin-bottom: 5rem;
+  margin-top: 15rem;
+  text-align: left;
 }
 
 .section-intro .display-1 {
@@ -2396,10 +2398,11 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-bottom: 16rem;
+  
   background-color: #ffffff;
   position: relative;
   color: #000000;
+  border-bottom: 1px solid #979494;
 }
 
 .s-about p{
@@ -2411,8 +2414,8 @@ html.no-csstransitions .hero-content {
 } */
 
 .s-about__section--profile {
-  padding-top: 28rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   min-height: 108rem;
   position: relative;
 }
@@ -2420,7 +2423,7 @@ html.no-csstransitions .hero-content {
 .s-about__section--profile::before {
   content: "";
   display: block;
-  background-color: #b3c2c1;
+  background-color: #3e4674;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2439,84 +2442,8 @@ html.no-csstransitions .hero-content {
   left: calc(50% + 80px);
 }
 
-/* ------------------------------------------------------------------- 
- * ## bloc compétence*/
-
- .expertise {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.column-expertise {
-  flex: 0 0 48%;
-}
-
-.one-expertise{
-  height: 300px;
-  padding-bottom: 30px;
-}
-
-.one-expertise img{
-  width: 100px;
-  height: 100px;
-  
-  
-}
 
 
-/* ------------------------------------------------------------------- 
- * ## career position
- * ------------------------------------------------------------------- */
-.work-positions {
-  margin-top: 2rem;
-}
-
-.work-positions .column:nth-child(2n + 1) {
-  padding-right: 40px;
-}
-
-.work-positions .column:nth-child(2n + 2) {
-  padding-left: 40px;
-}
-
-.position {
-  padding-top: 3.6rem;
-  padding-bottom: 3.2rem;
-  border-top: 1px solid #b3c2c1;
-}
-
-.position__header {
-  margin-bottom: 4rem;
-}
-
-.position__header h6 {
-  font-family: "Martel", serif;
-  line-height: 2.8rem;
-  margin-top: 0;
-  margin-bottom: .4rem;
-}
-
-.position__header h6 .position__co {
-  margin-right: 2rem;
-}
-
-.position__header h6 .position__pos {
-  display: inline-block;
-  font-size: 1.8rem;
-  text-transform: none;
-  letter-spacing: 0;
-}
-
-.position__timeframe {
-  font-family: "Gothic A1", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .3rem;
-  color: #7e7e7e;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2586,130 +2513,53 @@ html.no-csstransitions .hero-content {
 
 }
 
-
-
-/* ===================================================================
- * # services section
- *
- * ------------------------------------------------------------------- */
-.s-services {
-  padding-top: 24rem;
-  padding-bottom: 20rem;
-  background-color: #1d1b37;
-  position: relative;
-}
-
-.s-services__content {
-  position: relative;
-}
-
-.s-services__leftcol {
-  padding-bottom: 12rem;
-}
-
-.s-services__leftcol p.lead {
-  max-width: 90%;
-}
-
-.s-services .vert-line {
-  width: 2px;
-  height: 20rem;
-  background-color: #f9861a;
-  -webkit-transform: translate3d(50%, 0, 0);
-  transform: translate3d(50%, 0, 0);
-  position: absolute;
-  bottom: -20rem;
-  left: 20px;
-}
-
 /* ------------------------------------------------------------------- 
- * ## services list
+ * skills
+ 
  * ------------------------------------------------------------------- */
-.services-list {
-  list-style: none;
-  padding-left: 20px;
-  margin: 8.8rem 0 0 0;
-  counter-reset: ctr;
+ .skills-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 80%;
+  margin:auto;
+
 }
 
-.services-list h5 {
-  color: #ffffff;
+.row-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
 }
 
-.services-list__item {
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-left: 0;
+
+.skills-item {
+  flex: 1 0 40%; /* Cela signifie que chaque élément prendra environ 48% de la largeur du conteneur. */
+  margin-bottom: 20px; /* Pour ajouter de l'espace entre les lignes */
+  
+  
 }
 
-.services-list__item:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+.skills-item img{
+  width: 100px;
+  height: 100px;
+  
 }
 
-.services-list__item-header {
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  padding-right: 6rem;
-  cursor: pointer;
-  position: relative;
+.skills-item h3{
+  margin-top: 0;
 }
 
-.services-list__item-header h5 {
-  font-family: "Gothic A1", sans-serif;
-  font-weight: 400;
-  font-size: 3.6rem;
-  padding-left: 1.111em;
-  margin: 0;
-  position: relative;
+.right{
+  margin-left: 90px;
 }
 
-.services-list__item-header h5::before {
-  content: counter(ctr, decimal-leading-zero) ".";
-  counter-increment: ctr;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 600;
-  font-size: .5em;
-  line-height: 1;
-  color: #f9861a;
-  position: absolute;
-  top: .5em;
-  left: 0;
-}
 
-.services-list__item-header::after {
-  border-bottom: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
-  content: '';
-  display: block;
-  height: 6px;
-  width: 6px;
-  margin-top: -6px;
-  pointer-events: none;
-  position: absolute;
-  right: 2.4rem;
-  top: 50%;
-  -webkit-transform-origin: 66% 66%;
-  transform-origin: 66% 66%;
-  -webkit-transition: all, .3s;
-  transition: all, .3s;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
 
-.services-list__item-body {
-  padding-top: 1.2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
-  display: none;
-}
 
-.is-active .services-list__item-header::after {
-  -webkit-transform: rotate(225deg);
-  transform: rotate(225deg);
-}
-
-.is-active .services-list__item-body {
-  display: block;
-}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2804,35 +2654,99 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
-  padding-top: 24rem;
-  padding-bottom: 0;
+  padding-top: 7rem;
+  padding-bottom: 10px;
   background-color: #ffffff;
-  position: relative;
+  /* position: relative; */
 }
 
 .s-portfolio::before {
   content: "";
   display: block;
-  background-color: #b3c2c1;
+  /* background-color: #ffffff; */
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 50%;
 }
-/* porfolio test*/
-
-
-
-.techno ul{
+/*-------------------
+*## portfolio-contenu
+*/
+.portfolio-contenu {
   display: flex;
-  justify-content: space-between;
-  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90vh;
+  margin-bottom: 250px;
+  margin-top: 200px;
+  
 }
 
-.techno ul li {
-  margin-right: 10px;
-  list-style: none;
+.title-projet{
+  text-align: left;
+  margin-left: 370px;
+}
+
+.portfolio-item{
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.project {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 60px;
+}
+
+
+
+.project img {
+  width: 100%;
+  height: 300px; 
+}
+
+.framed {
+  border: 1px solid #ddd; /* Ajoute un cadre */
+  border-radius: 4px; /* Arrondit les coins du cadre */
+  padding: 5px; /* Ajoute un peu d'espace entre le cadre et l'image */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+}
+
+
+.project-description {
+  width: 50%;
+  margin-left: 50px; 
+}
+
+.link-gt{
+  margin-left: 10px;
+}
+
+.project-description p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.project-description ul {
+  display: flex;
+  gap: 10px; /* Cela ajoute un espace entre chaque élément de la liste */
+  list-style-type: none; /* Cela supprime les puces de la liste */
+}
+
+.project-description ul li {
+  background-color: orange;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-description ul li:hover {
+  background-color: darkorange;
 }
 
 
@@ -2843,17 +2757,17 @@ html.no-csstransitions .hero-content {
 .s-portfolio__list {
   max-width: 1240px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .folio-item {
   position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;  
   margin-bottom: 20px;
   
 }
+
 
 
 
@@ -3104,8 +3018,8 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-footer {
-  padding-top: 24rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #0b0a15;
   position: relative;
   display: flex;
@@ -3116,7 +3030,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-footer__main {
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3154,7 +3068,7 @@ html.no-csstransitions .hero-content {
 .s-footer__bottom {
   font-family: "Gothic A1", sans-serif;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 8rem;
+  margin-top: 1rem;
 }
 
 .s-footer .footer-email-us .btn:hover,
@@ -3165,7 +3079,7 @@ html.no-csstransitions .hero-content {
 }
 
 .s-footer .footer-contacts {
-  margin-top: 7.2rem;
+  margin-top: 2rem;
   margin-left: 8.33333%;
 }
 
