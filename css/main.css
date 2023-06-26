@@ -2517,30 +2517,31 @@ html.no-csstransitions .hero-content {
  * skills
  
  * ------------------------------------------------------------------- */
- .skills-content {
+ .skills-contents {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
   margin:auto;
 }
 
 .row-skills {
   display: flex;
-  flex-direction: row; /* Change from column to row */
   flex-wrap: wrap; /* Allow the items to wrap to the next line */
   justify-content: space-between;
-  align-content: space-between;
-  max-height: 800px; 
+  align-items: flex-start;
 }
 
 .skills-item {
   flex: 1 0 calc(50% - 20px); /* Adjust for 2 items per row. 20px for margin */
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  
 }
-
 
 .skills-item img{
   width: 100px;
@@ -2552,8 +2553,9 @@ html.no-csstransitions .hero-content {
 }
 
 .right{
-  margin-left: 90px;
+  margin-left: 30px;
 }
+
 
 
 /* ------------------------------------------------------------------- 
