@@ -2551,6 +2551,10 @@ html.no-csstransitions .hero-content {
   margin-top: 0;
 }
 
+.right{
+  margin-left: 30px;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -2670,7 +2674,7 @@ html.no-csstransitions .hero-content {
   justify-content: center;
   align-items: flex-start;
   height: 90vh;
-  margin-bottom: 350px;
+  margin-bottom: 450px;
   margin-top: 200px;
   
 }
