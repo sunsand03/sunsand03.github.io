@@ -2729,6 +2729,8 @@ html.no-csstransitions .hero-content {
   display: flex;
   gap: 10px; /* Cela ajoute un espace entre chaque élément de la liste */
   list-style-type: none; /* Cela supprime les puces de la liste */
+  padding: 0;
+  margin: 0;
 }
 
 .project-description ul li {
