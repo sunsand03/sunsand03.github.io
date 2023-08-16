@@ -1373,8 +1373,8 @@ input::-moz-focus-inner {
 
 .section-intro {
   position: relative;
-  margin-bottom: 10rem;
-  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-top: 8rem;
   text-align: left;
 }
 
