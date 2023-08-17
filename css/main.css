@@ -1363,14 +1363,13 @@ input::-moz-focus-inner {
 
 .display-1 {
   font-size: 4.8rem;
-  line-height: 1.333;
-  margin-top: 120px;
+  line-height: 1.333;  
 }
 
 .section-intro {
   position: relative;
   margin-bottom: 5rem;
-  margin-top: 200px;  
+  margin-top: 100px;  
   text-align: left;
 }
 
@@ -2529,22 +2528,12 @@ html.no-csstransitions .hero-content {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
-  padding-top: 7rem;
+  padding-top: 4rem;
   padding-bottom: 10px;
   background-color: #ffffff;
   /* position: relative; */
 }
 
-.s-portfolio::before {
-  content: "";
-  display: block;
-  /* background-color: #ffffff; */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-}
 /*-------------------
 *## portfolio-contenu
 */
@@ -2553,7 +2542,7 @@ html.no-csstransitions .hero-content {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
+  height: 150vh;
   margin-bottom: 250px;
   margin-top: 200px;
 }
